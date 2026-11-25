@@ -9,11 +9,11 @@ namespace GymManage.Configurations
         public void Configure(EntityTypeBuilder<Tuser> builder)
         {
             builder.Property(U => U.Name)
-                .HasColumnType("varchar(50");
+                .HasColumnType("varchar(50)");
             builder.Property(U => U.Email)
-                 .HasColumnType("varchar(100");
+                 .HasColumnType("varchar(100)");
             builder.Property(U => U.Phone)
-                .HasColumnType("varchar(11");
+                .HasColumnType("varchar(11)");
             builder.ComplexProperty(U => U.Address);
             builder.HasIndex(U => U.Email)
                 .IsUnique();
